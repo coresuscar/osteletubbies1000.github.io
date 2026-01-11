@@ -20,95 +20,85 @@ body {
   min-height: 100vh;
   background: linear-gradient(-45deg, #2b0f52, #7a35ff, #3b136f, #5a1fd8);
   background-size: 400% 400%;
-  animation: bgMove 18s ease infinite;
+  animation: bgMove 16s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  color: white;
   overflow: hidden;
+  color: white;
 }
 
-/* FUNDO ANIMADO */
+/* FUNDO */
 @keyframes bgMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* PARTÍCULAS */
+/* PARTÍCULAS MAIS INTENSAS */
 .particles span {
   position: absolute;
-  width: 6px;
-  height: 6px;
-  background: rgba(255,255,255,0.15);
+  width: 5px;
+  height: 5px;
+  background: rgba(255,255,255,0.25);
   border-radius: 50%;
-  animation: float 18s linear infinite;
+  animation: float 12s linear infinite;
 }
 
 @keyframes float {
-  from { transform: translateY(100vh); }
-  to { transform: translateY(-10vh); }
+  from { transform: translateY(110vh); }
+  to { transform: translateY(-20vh); }
 }
 
 .card {
   position: relative;
   width: 100%;
-  max-width: 440px;
+  max-width: 420px;
   background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
   border-radius: 26px;
   padding: 38px 32px;
   text-align: center;
   box-shadow:
-    0 0 40px rgba(122,53,255,0.35),
+    0 0 45px rgba(122,53,255,0.45),
     inset 0 0 0 1px rgba(255,255,255,0.08);
-  animation: fadeIn 0.9s ease;
   z-index: 2;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* LOGO PNG */
+/* LOGO */
 .logo img {
-  width: 110px;
+  width: 120px;
   margin-bottom: 18px;
-  filter: drop-shadow(0 0 20px rgba(255,200,80,0.8));
+  filter: drop-shadow(0 0 25px rgba(255,215,120,0.9));
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 14px;
-  text-shadow: 0 0 18px rgba(160,90,255,0.9);
+  text-shadow: 0 0 20px rgba(160,90,255,1);
 }
 
 p {
   font-size: 0.95rem;
-  opacity: 0.85;
+  opacity: 0.9;
   line-height: 1.6;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
-/* SOBRE */
 .about {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.06);
   padding: 18px;
   border-radius: 16px;
   font-size: 0.85rem;
-  line-height: 1.6;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
-/* LINKS */
 .links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
   margin: 12px 0;
   padding: 15px;
   border-radius: 16px;
@@ -121,71 +111,4 @@ p {
 
 .links a:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(90,31,216,0.7);
-}
-
-.footer {
-  margin-top: 26px;
-  font-size: 0.7rem;
-  opacity: 0.55;
-}
-</style>
-</head>
-
-<body>
-
-<!-- PARTÍCULAS -->
-<div class="particles">
-  <span style="left:10%; animation-delay:0s;"></span>
-  <span style="left:25%; animation-delay:3s;"></span>
-  <span style="left:40%; animation-delay:6s;"></span>
-  <span style="left:55%; animation-delay:9s;"></span>
-  <span style="left:70%; animation-delay:12s;"></span>
-  <span style="left:85%; animation-delay:15s;"></span>
-</div>
-
-<div class="card">
-
-  <div class="logo">
-    <img src="logo.png" alt="OT1000 Logo">
-  </div>
-
-  <h1>OsTeletubbies1000</h1>
-
-  <p>
-    4 amigos a jogar slots <br>
-    em busca da sorte e diversão
-  </p>
-
-  <div class="about">
-    🎰 Conteúdo focado em slots <br>
-    🪙 Casino vibes & grandes riscos <br>
-    🔥 Comunidade ativa e divertida
-  </div>
-
-  <div class="links">
-    <a href="https://twitch.tv/OsTeletubbies1000" target="_blank">
-      <i class="fa-brands fa-twitch"></i> Twitch
-    </a>
-    <a href="https://discord.gg/uEy4GksWXT" target="_blank">
-      <i class="fa-brands fa-discord"></i> Discord
-    </a>
-    <a href="https://www.youtube.com/@OsTeletubbies1000" target="_blank">
-      <i class="fa-brands fa-youtube"></i> YouTube
-    </a>
-    <a href="https://www.tiktok.com/@osteletubbies1000" target="_blank">
-      <i class="fa-brands fa-tiktok"></i> TikTok
-    </a>
-    <a href="https://www.instagram.com/osteletubbies1000/" target="_blank">
-      <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-  </div>
-
-  <div class="footer">
-    © 2026 OsTeletubbies1000
-  </div>
-
-</div>
-
-</body>
-</html>
+  box-shadow: 0 14px 34px
