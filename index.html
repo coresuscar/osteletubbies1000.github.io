@@ -8,6 +8,9 @@
   <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     * {
       margin: 0;
@@ -38,21 +41,15 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
       font-size: 2.6rem;
       font-weight: 800;
       margin-bottom: 15px;
-      text-shadow: 0 0 15px rgba(160, 90, 255, 0.9);
+      text-shadow: 0 0 18px rgba(160, 90, 255, 0.9);
     }
 
     p {
@@ -63,20 +60,25 @@
     }
 
     .links a {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 14px;
       margin: 14px 0;
-      padding: 15px;
+      padding: 15px 18px;
       border-radius: 14px;
       text-decoration: none;
       font-weight: 600;
       color: white;
       background: linear-gradient(135deg, #7b3cff, #5a1fd8);
-      box-shadow: 0 0 0 rgba(0,0,0,0);
       transition: all 0.25s ease;
     }
 
+    .links a i {
+      font-size: 1.2rem;
+    }
+
     .links a:hover {
-      transform: translateY(-3px) scale(1.01);
+      transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(90, 31, 216, 0.6);
     }
 
@@ -87,9 +89,7 @@
     }
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 2.2rem;
-      }
+      h1 { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -100,15 +100,29 @@
 
     <p>
       4 amigos a jogar slots <br>
-      em busca da sorte e diversão 🎰
+      em busca da sorte e diversão
     </p>
 
     <div class="links">
-      <a href="https://twitch.tv/OsTeletubbies1000" target="_blank">🎮 Twitch</a>
-      <a href="https://discord.gg/uEy4GksWXT" target="_blank">💬 Discord</a>
-      <a href="https://www.youtube.com/@OsTeletubbies1000" target="_blank">▶️ YouTube</a>
-      <a href="https://www.tiktok.com/@osteletubbies1000" target="_blank">🎵 TikTok</a>
-      <a href="https://www.instagram.com/osteletubbies1000/" target="_blank">📸 Instagram</a>
+      <a href="https://twitch.tv/OsTeletubbies1000" target="_blank">
+        <i class="fa-brands fa-twitch"></i> Twitch
+      </a>
+
+      <a href="https://discord.gg/uEy4GksWXT" target="_blank">
+        <i class="fa-brands fa-discord"></i> Discord
+      </a>
+
+      <a href="https://www.youtube.com/@OsTeletubbies1000" target="_blank">
+        <i class="fa-brands fa-youtube"></i> YouTube
+      </a>
+
+      <a href="https://www.tiktok.com/@osteletubbies1000" target="_blank">
+        <i class="fa-brands fa-tiktok"></i> TikTok
+      </a>
+
+      <a href="https://www.instagram.com/osteletubbies1000/" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
     </div>
 
     <div class="footer">
