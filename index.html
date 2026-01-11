@@ -20,12 +20,13 @@
     }
 
     body {
-      height: 100vh;
+      min-height: 100vh;
       background: radial-gradient(circle at top, #7a35ff, #2b0f52 70%);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
+      padding: 20px;
     }
 
     .card {
@@ -37,18 +38,25 @@
       max-width: 420px;
       text-align: center;
       box-shadow: 0 0 40px rgba(0,0,0,0.4);
-      animation: fadeIn 1s ease;
+      animation: fadeIn 0.9s ease;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h1 {
       font-size: 2.6rem;
       font-weight: 800;
-      margin-bottom: 15px;
+      margin: 0 0 15px 0;
+      text-align: center;
       text-shadow: 0 0 18px rgba(160, 90, 255, 0.9);
     }
 
@@ -62,6 +70,7 @@
     .links a {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 14px;
       margin: 14px 0;
       padding: 15px 18px;
@@ -89,7 +98,9 @@
     }
 
     @media (max-width: 480px) {
-      h1 { font-size: 2.2rem; }
+      h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
