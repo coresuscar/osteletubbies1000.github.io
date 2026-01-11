@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nós • OsTeletubbies1000</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
+
+body{
+  min-height:100vh;
+  background:linear-gradient(-45deg,#2b0f52,#7a35ff,#3b136f,#5a1fd8);
+  background-size:400% 400%;
+  animation:bgMove 14s ease infinite;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.container{
+  width:100%;
+  max-width:700px;
+  background:rgba(0,0,0,0.35);
+  backdrop-filter:blur(18px);
+  border-radius:30px;
+  padding:40px;
+  box-shadow:0 0 50px rgba(122,53,255,.5);
+}
+
+.back{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  margin-bottom:30px;
+  opacity:.8;
+}
+
+.back:hover{ opacity:1; }
+
+.logo{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.logo img{
+  width:110px;
+  filter:drop-shadow(0 0 20px gold);
+}
+
+h1{
+  text-align:center;
+  font-size:2.4rem;
+  font-weight:800;
+  margin-bottom:20px;
+  text-shadow:0 0 20px rgba(170,90,255,1);
+}
+
+.section{
+  margin-bottom:30px;
+}
+
+.section h2{
+  font-size:1.3rem;
+  margin-bottom:12px;
+}
+
+.section p{
+  font-size:.95rem;
+  opacity:.9;
+  line-height:1.7;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:16px;
+}
+
+.card{
+  background:rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px;
+  text-align:center;
+}
+
+.card span{
+  font-size:1.8rem;
+}
+
+.card h3{
+  font-size:.95rem;
+  margin:10px 0 6px;
+}
+
+.card p{
+  font-size:.75rem;
+  opacity:.8;
+}
+
+.footer{
+  text-align:center;
+  margin-top:30px;
+  font-size:.7rem;
+  opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back">
+  <i class="fa-solid fa-arrow-left"></i> Voltar
+</a>
+
+<div class="logo">
+  <img src="logo.png" alt="OT1000 Logo">
+</div>
+
+<h1>Quem Somos</h1>
+
+<div class="section">
+  <p>
+    Os <strong>OsTeletubbies1000</strong> são 4 amigos apaixonados por slots,
+    casino vibes e momentos de pura adrenalina.
+    Aqui jogamos para nos divertirmos, arriscamos juntos
+    e criamos uma comunidade onde todos contam.
+  </p>
+</div>
+
+<div class="section">
+  <h2>🎰 O Que Fazemos</h2>
+  <p>
+    Streams de slots, grandes riscos, grandes momentos,
+    gargalhadas e aquela esperança de que o próximo spin
+    é o premiado.
+  </p>
+</div>
+
+<div class="section">
+  <h2>👥 A Equipa</h2>
+
+  <div class="cards">
+    <div class="card">
+      <span>🎲</span>
+      <h3>Risk Master</h3>
+      <p>O que carrega no spin sem medo</p>
+    </div>
+    <div class="card">
+      <span>🧠</span>
+      <h3>Strategist</h3>
+      <p>Pensa… mas acaba por arriscar</p>
+    </div>
+    <div class="card">
+      <span>🔥</span>
+      <h3>Hype Man</h3>
+      <p>Grita antes do prémio sair</p>
+    </div>
+    <div class="card">
+      <span>🍀</span>
+      <h3>Lucky One</h3>
+      <p>Diz que sente quando vai bater</p>
