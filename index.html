@@ -27,7 +27,7 @@
       background: linear-gradient(-45deg, #2b0f52, #7a35ff, #3b136f, #5a1fd8);
       background-size: 400% 400%;
       animation: bgMove 14s ease infinite;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     @keyframes bgMove {
@@ -36,15 +36,13 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Partículas */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background-image:
-        radial-gradient(circle, rgba(255,255,255,0.12) 2px, transparent 2px);
-      background-size: 40px 40px;
-      animation: particles 30s linear infinite;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.12) 2px, transparent 2px);
+      background-size: 35px 35px;
+      animation: particles 25s linear infinite;
       pointer-events: none;
     }
 
@@ -55,12 +53,12 @@
 
     .card {
       background: #4b2495;
-      width: 360px;
+      width: 380px;
       padding: 30px 24px;
-      border-radius: 26px;
+      border-radius: 28px;
       text-align: center;
       color: #fff;
-      box-shadow: 0 20px 60px rgba(0,0,0,.4);
+      box-shadow: 0 20px 60px rgba(0,0,0,.45);
       position: relative;
     }
 
@@ -83,27 +81,33 @@
     }
 
     .logo {
-      width: 130px;
-      margin-bottom: 14px;
-      filter: drop-shadow(0 0 20px rgba(255,215,0,.5));
+      width: 135px;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 0 22px rgba(255,215,0,.55));
     }
 
     h1 {
       font-size: 28px;
       font-weight: 700;
-      margin-bottom: 14px;
+      margin-bottom: 18px;
     }
 
-    .info {
+    .box {
       background: rgba(255,255,255,.1);
       border-radius: 18px;
       padding: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       text-align: left;
       font-size: 14px;
     }
 
-    .info p {
+    .box h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .box p {
       margin-bottom: 6px;
     }
 
@@ -142,17 +146,28 @@
 
     <div class="live">🔴 AO VIVO</div>
 
-    <!-- LOGO (PNG) -->
+    <!-- LOGO -->
     <img src="logo.png" alt="OT1000 Logo" class="logo">
 
     <h1>OsTeletubbies1000</h1>
 
-    <div class="info">
-      <p>🎰 Conteúdo focado em slots</p>
-      <p>💰 Casino vibes & grandes riscos</p>
-      <p>🔥 Comunidade ativa e divertida</p>
+    <!-- SOBRE NÓS -->
+    <div class="box">
+      <h2>👥 Sobre Nós</h2>
+      <p>🎰 Grupo focado em slots e casino</p>
+      <p>🔥 Lives cheias de emoção e riscos</p>
+      <p>💬 Comunidade ativa e divertida</p>
     </div>
 
+    <!-- AGENDA -->
+    <div class="box">
+      <h2>📅 Agenda</h2>
+      <p>🟣 <strong>Seg–Sex</strong> — 21:00</p>
+      <p>🟣 <strong>Sábado</strong> — 22:00</p>
+      <p>🔴 <strong>Streams especiais</strong> anunciadas no Discord</p>
+    </div>
+
+    <!-- LINKS -->
     <a class="btn" href="https://twitch.tv/OsTeletubbies1000" target="_blank">
       <i class="fa-brands fa-twitch"></i> Twitch
     </a>
@@ -173,12 +188,12 @@
       <i class="fa-brands fa-instagram"></i> Instagram
     </a>
 
-    <!-- CLIPES TWITCH (ÚNICO) -->
     <a class="btn" href="https://www.twitch.tv/OsTeletubbies1000/clips" target="_blank">
       <i class="fa-solid fa-clapperboard"></i> Clipes (Twitch)
     </a>
 
     <footer>© 2026 OsTeletubbies1000</footer>
+
   </div>
 
 </body>
