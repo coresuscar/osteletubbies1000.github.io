@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda • OsTeletubbies1000</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(-45deg,#2b0f52,#7a35ff,#3b136f,#5a1fd8);
+  background-size:400% 400%;
+  animation:bgMove 14s ease infinite;
+  color:white;
+  padding:20px;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.container{
+  max-width:700px;
+  margin:auto;
+  background:rgba(0,0,0,.35);
+  backdrop-filter:blur(18px);
+  border-radius:30px;
+  padding:40px;
+  box-shadow:0 0 50px rgba(122,53,255,.5);
+}
+
+.back{
+  display:inline-flex;
+  gap:10px;
+  text-decoration:none;
+  color:white;
+  opacity:.8;
+  margin-bottom:30px;
+}
+
+h1{
+  text-align:center;
+  font-size:2.4rem;
+  font-weight:800;
+  margin-bottom:30px;
+}
+
+.day{
+  background:rgba(255,255,255,.06);
+  padding:20px;
+  border-radius:18px;
+  margin-bottom:16px;
+}
+
+.day h3{
+  font-size:1.1rem;
+  margin-bottom:8px;
+}
+
+.day p{
+  font-size:.85rem;
+  opacity:.9;
+}
+
+.footer{
+  text-align:center;
+  margin-top:30px;
+  font-size:.7rem;
+  opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back">
+  <i class="fa-solid fa-arrow-left"></i> Voltar
+</a>
+
+<h1>📅 Agenda de Streams</h1>
+
+<div class="day">
+  <h3>🟣 Segunda-feira</h3>
+  <p>Slots & chill — 21:00</p>
+</div>
+
+<div class="day">
+  <h3>🟣 Quarta-feira</h3>
+  <p>Risco máximo 🎰 — 22:00</p>
+</div>
+
+<div class="day">
+  <h3>🟣 Sexta-feira</h3>
+  <p>Noite grande 💰 — 22:30</p>
+</div>
+
+<div class="footer">
+  © 2026 OsTeletubbies1000
+</div>
+
+</div>
+
+</body>
+</html>
