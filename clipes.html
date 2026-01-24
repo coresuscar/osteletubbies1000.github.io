@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clipes • OsTeletubbies1000</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(-45deg,#2b0f52,#7a35ff,#3b136f,#5a1fd8);
+  background-size:400% 400%;
+  animation:bgMove 14s ease infinite;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.container{
+  width:100%;
+  max-width:900px;
+  background:rgba(0,0,0,.35);
+  backdrop-filter:blur(18px);
+  border-radius:30px;
+  padding:40px;
+  box-shadow:0 0 50px rgba(122,53,255,.5);
+}
+
+.back{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  text-decoration:none;
+  color:white;
+  opacity:.8;
+  margin-bottom:30px;
+}
+
+.back:hover{opacity:1;}
+
+h1{
+  text-align:center;
+  font-size:2.4rem;
+  font-weight:800;
+  margin-bottom:30px;
+  text-shadow:0 0 20px rgba(170,90,255,1);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+.clip{
+  background:rgba(255,255,255,.06);
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+  transition:.3s;
+}
+
+.clip:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 30px rgba(122,53,255,.6);
+}
+
+.clip i{
+  font-size:2.4rem;
+  margin-bottom:12px;
+}
+
+.clip h3{
+  font-size:1rem;
+  margin-bottom:8px;
+}
+
+.clip p{
+  font-size:.8rem;
+  opacity:.8;
+}
+
+.footer{
+  text-align:center;
+  margin-top:30px;
+  font-size:.7rem;
+  opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back">
+  <i class="fa-solid fa-arrow-left"></i> Voltar
+</a>
+
+<h1>🎥 Clipes & Momentos</h1>
+
+<div class="grid">
+
+  <div class="clip">
+    <i class="fa-solid fa-clapperboard"></i>
+    <h3>Grande Win</h3>
+    <p>O spin que ninguém esperava</p>
+  </div>
+
+  <div class="clip">
+    <i class="fa-solid fa-fire"></i>
+    <h3>Momento Insano</h3>
+    <p>Quando o chat perdeu a cabeça</p>
+  </div>
+
+  <div class="clip">
+    <i class="fa-solid fa-face-laugh-squint"></i>
+    <h3>Fail Épico</h3>
+    <p>Rir para não chorar</p>
+  </div>
+
+  <div class="clip">
+    <i class="fa-solid fa-gem"></i>
+    <h3>Melhor do Mês</h3>
+    <p>Os highlights escolhidos</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 OsTeletubbies1000
+</div>
+
+</div>
+
+</body>
+</html>
