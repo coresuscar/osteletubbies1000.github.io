@@ -1,206 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8">
-  <title>OsTeletubbies1000</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>OsTeletubbies1000</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d6d66c.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a2d9d6d66c.js" crossorigin="anonymous"></script>
 
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:Poppins,sans-serif }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 
-    body {
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(-45deg,#2b0f52,#7a35ff,#3b136f,#5a1fd8);
-      background-size:400% 400%;
-      animation:bgMove 14s ease infinite;
-      overflow:hidden;
-    }
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(-45deg,#2b0f52,#7a35ff,#3b136f,#5a1fd8);
+background-size:400% 400%;
+animation:bg 14s ease infinite;
+overflow:hidden;
+}
 
-    @keyframes bgMove {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
 
-    body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      background-image:radial-gradient(circle,rgba(255,255,255,.12) 2px,transparent 2px);
-      background-size:35px 35px;
-      animation:particles 25s linear infinite;
-      pointer-events:none;
-    }
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background-image:radial-gradient(circle,rgba(255,255,255,.12) 2px,transparent 2px);
+background-size:35px 35px;
+animation:particles 25s linear infinite;
+pointer-events:none;
+}
 
-    @keyframes particles{
-      from{background-position:0 0}
-      to{background-position:400px 800px}
-    }
+@keyframes particles{
+from{background-position:0 0}
+to{background-position:400px 800px}
+}
 
-    .card{
-      background:#4b2495;
-      width:380px;
-      padding:30px 24px;
-      border-radius:28px;
-      text-align:center;
-      color:#fff;
-      box-shadow:0 20px 60px rgba(0,0,0,.45);
-      position:relative;
-    }
+.card{
+background:#4b2495;
+width:380px;
+padding:30px 24px;
+border-radius:28px;
+text-align:center;
+color:#fff;
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+position:relative;
+}
 
-    .live{
-      position:absolute;
-      top:18px;
-      right:18px;
-      background:linear-gradient(135deg,#ff1a1a,#ff5f5f);
-      padding:6px 14px;
-      border-radius:999px;
-      font-size:12px;
-      font-weight:700;
-      animation:pulse 1.4s infinite;
-    }
+.live{
+position:absolute;
+top:18px;
+right:18px;
+background:linear-gradient(135deg,#ff1a1a,#ff5f5f);
+padding:6px 14px;
+border-radius:999px;
+font-size:12px;
+font-weight:700;
+animation:pulse 1.4s infinite;
+}
 
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(255,0,0,.6)}
-      70%{box-shadow:0 0 0 12px rgba(255,0,0,0)}
-      100%{box-shadow:0 0 0 0 rgba(255,0,0,0)}
-    }
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(255,0,0,.6)}
+70%{box-shadow:0 0 0 12px rgba(255,0,0,0)}
+100%{box-shadow:0 0 0 0 rgba(255,0,0,0)}
+}
 
-    .logo{
-      width:135px;
-      margin-bottom:10px;
-      filter:drop-shadow(0 0 22px rgba(255,215,0,.55));
-    }
+.logo{
+width:135px;
+margin-bottom:10px;
+filter:drop-shadow(0 0 22px rgba(255,215,0,.55));
+}
 
-    h1{font-size:28px;margin-bottom:16px}
+h1{font-size:28px;margin-bottom:16px}
 
-    .btn{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      background:linear-gradient(135deg,#7c3cff,#5a1fd8);
-      color:#fff;
-      text-decoration:none;
-      padding:14px;
-      border-radius:16px;
-      font-weight:600;
-      margin-bottom:12px;
-      cursor:pointer;
-      transition:.2s;
-      box-shadow:0 10px 25px rgba(0,0,0,.3);
-    }
+.btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+background:linear-gradient(135deg,#7c3cff,#5a1fd8);
+color:#fff;
+text-decoration:none;
+padding:14px;
+border-radius:16px;
+font-weight:600;
+margin-bottom:12px;
+transition:.2s;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
 
-    .btn:hover{
-      transform:translateY(-3px);
-      box-shadow:0 15px 35px rgba(0,0,0,.45);
-    }
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
 
-    /* ABAS */
-    .accordion{
-      background:rgba(255,255,255,.1);
-      border-radius:16px;
-      margin-bottom:12px;
-      overflow:hidden;
-      text-align:left;
-    }
+.accordion{
+background:rgba(255,255,255,.1);
+border-radius:16px;
+margin-bottom:12px;
+overflow:hidden;
+text-align:left;
+}
 
-    .accordion-header{
-      padding:14px;
-      font-weight:600;
-      cursor:pointer;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+.accordion-header{
+padding:14px;
+font-weight:600;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    .accordion-content{
-      max-height:0;
-      overflow:hidden;
-      padding:0 14px;
-      font-size:14px;
-      transition:max-height .4s ease;
-    }
+.accordion-content{
+max-height:0;
+overflow:hidden;
+padding:0 14px;
+font-size:14px;
+transition:max-height .4s ease;
+}
 
-    .accordion.active .accordion-content{
-      max-height:300px;
-      padding-bottom:14px;
-    }
+.accordion.active .accordion-content{
+max-height:300px;
+padding-bottom:14px;
+}
 
-    .accordion-content p{margin-bottom:6px}
+.accordion-content p{margin-bottom:6px}
 
-    footer{
-      margin-top:16px;
-      font-size:12px;
-      opacity:.7;
-    }
-  </style>
+footer{margin-top:16px;font-size:12px;opacity:.7}
+</style>
 </head>
 
 <body>
 
 <div class="card">
 
-  <div class="live">🔴 AO VIVO</div>
+<div class="live">🔴 AO VIVO</div>
 
-  <img src="logo.png" class="logo">
-  <h1>OsTeletubbies1000</h1>
+<img src="logo.png" class="logo">
+<h1>OsTeletubbies1000</h1>
 
-  <!-- SOBRE NÓS -->
-  <div class="accordion">
-    <div class="accordion-header">
-      👥 Sobre Nós
-      <span>⬇️</span>
-    </div>
-    <div class="accordion-content">
-      <p>🎰 Slots sem medo de rodar</p>
-      <p>💰 Não temos medo do risco</p>
-      <p>🔥 Emoção até ao último spin</p>
-      <p>😂 Diversão, loucura e casino vibes</p>
-    </div>
-  </div>
+<!-- SOBRE NÓS -->
+<div class="accordion">
+<div class="accordion-header">👥 Sobre Nós <span>⬇️</span></div>
+<div class="accordion-content">
+<p>🎰 Slots sem medo de rodar</p>
+<p>💰 Não temos medo do risco</p>
+<p>🔥 Emoção até ao último spin</p>
+<p>😂 Diversão e casino vibes</p>
+</div>
+</div>
 
-  <!-- AGENDA -->
-  <div class="accordion">
-    <div class="accordion-header">
-      📅 Agenda
-      <span>⬇️</span>
-    </div>
-    <div class="accordion-content">
-      <p>🟣 Seg–Sex — 21:00</p>
-      <p>🟣 Sábado — 22:00</p>
-      <p>🔔 Streams extra anunciadas no Discord</p>
-    </div>
-  </div>
+<!-- AGENDA -->
+<div class="accordion">
+<div class="accordion-header">📅 Agenda <span>⬇️</span></div>
+<div class="accordion-content">
+<p>🟣 Seg–Sex — 21:00</p>
+<p>🟣 Sábado — 22:00</p>
+<p>🔔 Avisos no Discord</p>
+</div>
+</div>
 
-  <a class="btn" href="https://twitch.tv/OsTeletubbies1000" target="_blank">
-    <i class="fa-brands fa-twitch"></i> Twitch
-  </a>
+<!-- REDES -->
+<a class="btn" href="https://twitch.tv/OsTeletubbies1000" target="_blank">
+<i class="fa-brands fa-twitch"></i> Twitch
+</a>
 
-  <a class="btn" href="https://discord.gg/uEy4GksWXT" target="_blank">
-    <i class="fa-brands fa-discord"></i> Discord
-  </a>
+<a class="btn" href="https://discord.gg/uEy4GksWXT" target="_blank">
+<i class="fa-brands fa-discord"></i> Discord
+</a>
 
-  <a class="btn" href="https://www.twitch.tv/OsTeletubbies1000/clips" target="_blank">
-    <i class="fa-solid fa-clapperboard"></i> Clipes
-  </a>
+<a class="btn" href="https://www.youtube.com/@OsTeletubbies1000" target="_blank">
+<i class="fa-brands fa-youtube"></i> YouTube
+</a>
 
-  <footer>© 2026 OsTeletubbies1000</footer>
+<a class="btn" href="https://www.tiktok.com/@osteletubbies1000" target="_blank">
+<i class="fa-brands fa-tiktok"></i> TikTok
+</a>
+
+<a class="btn" href="https://www.instagram.com/osteletubbies1000/" target="_blank">
+<i class="fa-brands fa-instagram"></i> Instagram
+</a>
+
+<a class="btn" href="https://www.twitch.tv/OsTeletubbies1000/clips" target="_blank">
+<i class="fa-solid fa-clapperboard"></i> Clipes
+</a>
+
+<footer>© 2026 OsTeletubbies1000</footer>
 
 </div>
 
 <script>
-  document.querySelectorAll('.accordion-header').forEach(header=>{
-    header.addEventListener('click',()=>{
-      header.parentElement.classList.toggle('active');
-    });
-  });
+document.querySelectorAll('.accordion-header').forEach(h=>{
+h.onclick=()=>h.parentElement.classList.toggle('active');
+});
 </script>
 
 </body>
