@@ -5,196 +5,203 @@
   <title>OsTeletubbies1000</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
   <script src="https://kit.fontawesome.com/a2d9d6d66c.js" crossorigin="anonymous"></script>
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Poppins,sans-serif }
 
     body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(-45deg, #2b0f52, #7a35ff, #3b136f, #5a1fd8);
-      background-size: 400% 400%;
-      animation: bgMove 14s ease infinite;
-      overflow-x: hidden;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(-45deg,#2b0f52,#7a35ff,#3b136f,#5a1fd8);
+      background-size:400% 400%;
+      animation:bgMove 14s ease infinite;
+      overflow:hidden;
     }
 
     @keyframes bgMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image: radial-gradient(circle, rgba(255,255,255,0.12) 2px, transparent 2px);
-      background-size: 35px 35px;
-      animation: particles 25s linear infinite;
-      pointer-events: none;
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.12) 2px,transparent 2px);
+      background-size:35px 35px;
+      animation:particles 25s linear infinite;
+      pointer-events:none;
     }
 
-    @keyframes particles {
-      from { background-position: 0 0; }
-      to { background-position: 400px 800px; }
+    @keyframes particles{
+      from{background-position:0 0}
+      to{background-position:400px 800px}
     }
 
-    .card {
-      background: #4b2495;
-      width: 380px;
-      padding: 30px 24px;
-      border-radius: 28px;
-      text-align: center;
-      color: #fff;
-      box-shadow: 0 20px 60px rgba(0,0,0,.45);
-      position: relative;
+    .card{
+      background:#4b2495;
+      width:380px;
+      padding:30px 24px;
+      border-radius:28px;
+      text-align:center;
+      color:#fff;
+      box-shadow:0 20px 60px rgba(0,0,0,.45);
+      position:relative;
     }
 
-    .live {
-      position: absolute;
-      top: 18px;
-      right: 18px;
-      background: linear-gradient(135deg, #ff1a1a, #ff5f5f);
-      padding: 6px 14px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      animation: pulse 1.4s infinite;
+    .live{
+      position:absolute;
+      top:18px;
+      right:18px;
+      background:linear-gradient(135deg,#ff1a1a,#ff5f5f);
+      padding:6px 14px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+      animation:pulse 1.4s infinite;
     }
 
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(255,0,0,.6); }
-      70% { box-shadow: 0 0 0 12px rgba(255,0,0,0); }
-      100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(255,0,0,.6)}
+      70%{box-shadow:0 0 0 12px rgba(255,0,0,0)}
+      100%{box-shadow:0 0 0 0 rgba(255,0,0,0)}
     }
 
-    .logo {
-      width: 135px;
-      margin-bottom: 12px;
-      filter: drop-shadow(0 0 22px rgba(255,215,0,.55));
+    .logo{
+      width:135px;
+      margin-bottom:10px;
+      filter:drop-shadow(0 0 22px rgba(255,215,0,.55));
     }
 
-    h1 {
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 18px;
+    h1{font-size:28px;margin-bottom:16px}
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      background:linear-gradient(135deg,#7c3cff,#5a1fd8);
+      color:#fff;
+      text-decoration:none;
+      padding:14px;
+      border-radius:16px;
+      font-weight:600;
+      margin-bottom:12px;
+      cursor:pointer;
+      transition:.2s;
+      box-shadow:0 10px 25px rgba(0,0,0,.3);
     }
 
-    .box {
-      background: rgba(255,255,255,.1);
-      border-radius: 18px;
-      padding: 16px;
-      margin-bottom: 18px;
-      text-align: left;
-      font-size: 14px;
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 15px 35px rgba(0,0,0,.45);
     }
 
-    .box h2 {
-      font-size: 16px;
-      margin-bottom: 10px;
-      text-align: center;
+    /* ABAS */
+    .accordion{
+      background:rgba(255,255,255,.1);
+      border-radius:16px;
+      margin-bottom:12px;
+      overflow:hidden;
+      text-align:left;
     }
 
-    .box p {
-      margin-bottom: 6px;
+    .accordion-header{
+      padding:14px;
+      font-weight:600;
+      cursor:pointer;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: linear-gradient(135deg, #7c3cff, #5a1fd8);
-      color: #fff;
-      text-decoration: none;
-      padding: 14px;
-      border-radius: 16px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 10px 25px rgba(0,0,0,.3);
+    .accordion-content{
+      max-height:0;
+      overflow:hidden;
+      padding:0 14px;
+      font-size:14px;
+      transition:max-height .4s ease;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(0,0,0,.45);
+    .accordion.active .accordion-content{
+      max-height:300px;
+      padding-bottom:14px;
     }
 
-    footer {
-      margin-top: 18px;
-      font-size: 12px;
-      opacity: .7;
+    .accordion-content p{margin-bottom:6px}
+
+    footer{
+      margin-top:16px;
+      font-size:12px;
+      opacity:.7;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="card">
+<div class="card">
 
-    <div class="live">🔴 AO VIVO</div>
+  <div class="live">🔴 AO VIVO</div>
 
-    <!-- LOGO -->
-    <img src="logo.png" alt="OT1000 Logo" class="logo">
+  <img src="logo.png" class="logo">
+  <h1>OsTeletubbies1000</h1>
 
-    <h1>OsTeletubbies1000</h1>
-
-    <!-- SOBRE NÓS -->
-    <div class="box">
-      <h2>👥 Sobre Nós</h2>
-      <p>🎰 Grupo focado em slots e casino</p>
-      <p>🔥 Lives cheias de emoção e riscos</p>
-      <p>💬 Comunidade ativa e divertida</p>
+  <!-- SOBRE NÓS -->
+  <div class="accordion">
+    <div class="accordion-header">
+      👥 Sobre Nós
+      <span>⬇️</span>
     </div>
-
-    <!-- AGENDA -->
-    <div class="box">
-      <h2>📅 Agenda</h2>
-      <p>🟣 <strong>Seg–Sex</strong> — 21:00</p>
-      <p>🟣 <strong>Sábado</strong> — 22:00</p>
-      <p>🔴 <strong>Streams especiais</strong> anunciadas no Discord</p>
+    <div class="accordion-content">
+      <p>🎰 Slots sem medo de rodar</p>
+      <p>💰 Não temos medo do risco</p>
+      <p>🔥 Emoção até ao último spin</p>
+      <p>😂 Diversão, loucura e casino vibes</p>
     </div>
-
-    <!-- LINKS -->
-    <a class="btn" href="https://twitch.tv/OsTeletubbies1000" target="_blank">
-      <i class="fa-brands fa-twitch"></i> Twitch
-    </a>
-
-    <a class="btn" href="https://discord.gg/uEy4GksWXT" target="_blank">
-      <i class="fa-brands fa-discord"></i> Discord
-    </a>
-
-    <a class="btn" href="https://www.youtube.com/@OsTeletubbies1000" target="_blank">
-      <i class="fa-brands fa-youtube"></i> YouTube
-    </a>
-
-    <a class="btn" href="https://www.tiktok.com/@osteletubbies1000" target="_blank">
-      <i class="fa-brands fa-tiktok"></i> TikTok
-    </a>
-
-    <a class="btn" href="https://www.instagram.com/osteletubbies1000/" target="_blank">
-      <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-
-    <a class="btn" href="https://www.twitch.tv/OsTeletubbies1000/clips" target="_blank">
-      <i class="fa-solid fa-clapperboard"></i> Clipes (Twitch)
-    </a>
-
-    <footer>© 2026 OsTeletubbies1000</footer>
-
   </div>
+
+  <!-- AGENDA -->
+  <div class="accordion">
+    <div class="accordion-header">
+      📅 Agenda
+      <span>⬇️</span>
+    </div>
+    <div class="accordion-content">
+      <p>🟣 Seg–Sex — 21:00</p>
+      <p>🟣 Sábado — 22:00</p>
+      <p>🔔 Streams extra anunciadas no Discord</p>
+    </div>
+  </div>
+
+  <a class="btn" href="https://twitch.tv/OsTeletubbies1000" target="_blank">
+    <i class="fa-brands fa-twitch"></i> Twitch
+  </a>
+
+  <a class="btn" href="https://discord.gg/uEy4GksWXT" target="_blank">
+    <i class="fa-brands fa-discord"></i> Discord
+  </a>
+
+  <a class="btn" href="https://www.twitch.tv/OsTeletubbies1000/clips" target="_blank">
+    <i class="fa-solid fa-clapperboard"></i> Clipes
+  </a>
+
+  <footer>© 2026 OsTeletubbies1000</footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.accordion-header').forEach(header=>{
+    header.addEventListener('click',()=>{
+      header.parentElement.classList.toggle('active');
+    });
+  });
+</script>
 
 </body>
 </html>
